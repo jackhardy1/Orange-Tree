@@ -35,5 +35,9 @@ describe "one_year_passes" do
   it "when the tree is two years old, it should have 90 oranges" do
     expect{2.times do orange_tree.one_year_passes end}.to change{orange_tree.orange_count}.to eq 90
   end
+
+  it "when the tree is two years old, it should be 5 metres tall" do
+    expect{2.times do orange_tree.one_year_passes end}.to change{orange_tree.height}.to eq 5
+  end
 end
 end
