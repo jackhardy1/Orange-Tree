@@ -13,4 +13,9 @@ end
 def water
   @orange_count += 1
 end
-end 
+
+def one_year_passes
+  @height += 2
+  @orange_count += 20
+end
+end
